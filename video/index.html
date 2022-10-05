@@ -120,12 +120,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-widget-container">
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script>$.get("https://ipinfo.io/json", function (response) {
-$("#ip").html("IP: " + response.ip);
-$("#address").html(response.city + ", em " + response.region);
-$("#details").html(JSON.stringify(response, null, 4));
-}, "jsonp");</script>
-<center>Demanda de personas disponibles en <span id="address"></span> es alta.</center>
+
+Demanda de personas disponibles en <b class="yellow"><span id="cidade"></span></b> es alta.
+
 
 </div>
 				</div>
@@ -419,6 +416,36 @@ function getParams() {
     })
 }();
 </script>
+
+<script>
+
+    var request = new XMLHttpRequest();
+
+    request.open('GET', 'https://wtfismyip.com/json', true);
+
+
+
+    request.onload = function () {
+
+        if (this.status >= 200 && this.status < 400) {
+
+            var data = JSON.parse(this.response);
+
+            let output = data.YourFuckingLocation.replace(/\,.+/g, "$'");
+
+            document.getElementById("cidade").innerHTML = output;
+
+        } else {}
+
+    };
+
+    request.onerror = function () {};
+
+    request.send();
+
+	</script>
+
+
 </footer>
 
 </html>
