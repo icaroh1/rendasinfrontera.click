@@ -1,0 +1,21 @@
+﻿@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/barlow/v12/7cHpv4kjgoGqM7E_DMs8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(s/barlow/v12/7cHqv4kjgoGqM7E3t-4s51op.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(s/barlowsemicondensed/v14/wlpigxjLBV1hqnzfr-F8sEYMB0Yybp0mudRf36y_B2sg.ttf) format('truetype');
+}
