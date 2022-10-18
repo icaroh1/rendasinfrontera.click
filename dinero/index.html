@@ -125,6 +125,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- VSL -->
             <div id="vid_633606a5010c54000a7796ca" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_633606a5010c54000a7796ca" src="https://images.converteai.net/933410d8-4351-45eb-97d6-07638d2e8284/players/633606a5010c54000a7796ca/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_633606a5010c54000a7796ca" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_633606a5010c54000a7796ca">var s=document.createElement("script");s.src="https://scripts.converteai.net/933410d8-4351-45eb-97d6-07638d2e8284/players/633606a5010c54000a7796ca/player.js",s.async=!0,document.head.appendChild(s);</script>
 
+            <div id="cta1" class="mt-4 d-none">
+
+              <a href="https://pay.hotmart.com/I75803559Y?off=dn70txmk" class="a-btn" style="text-decoration: none;">
+                <span class="span-btn">PRÓXIMO PASO</span>
+                <span class="span-btn2">(Atención: Plazas Limitadas)</span>
+                <a href="https://pay.hotmart.com/I75803559Y?off=dn70txmk">🛒 PRÓXIMO PASO</a>
+              </a>
+
+              </div>
+
             <!-- Termos de Uso e Política de Privacidade -->
             <div class="text-white mt-4"><a href="https://rendasinfrontera.click/condiciones-de-uso/" class="text-white">Terminos de uso</a> | <a href="https://rendasinfrontera.click/condiciones-de-uso/" class="text-white">Política de privacidad</a>
               <p>Contenido exclusivo diseñado para ti</p>
@@ -140,7 +150,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </header>
 
     <script type="text/javascript">
-      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none")}, 786000); // original 786000 temporização da Call to Action (em milissegundos)
+      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none")}, 10); // original 786000 temporização da Call to Action (em milissegundos)
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -149,5 +159,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="./assets/js/com.js"></script>
 
   </body>
+
+  <footer>
+    
+  <script>
+      let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com", "https://go.hotmart.com"];
+
+  function getParams() {
+      let t = "",
+          e = window.top.location.href,
+          r = new URL(e);
+      if (null != r) {
+          let a = r.searchParams.get("utm_source"),
+              n = r.searchParams.get("utm_medium"),
+              o = r.searchParams.get("utm_campaign"),
+              m = r.searchParams.get("utm_term"),
+              c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
+      }
+      return t
+  }! function() {
+      var t = new URLSearchParams(window.location.search);
+      t.toString() && document.querySelectorAll("a").forEach(function(e) {
+          for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+      })
+  }();
+  </script>
+
+  </footer>
 
 </html>
